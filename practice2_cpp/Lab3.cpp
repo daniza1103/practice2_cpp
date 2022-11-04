@@ -1,5 +1,5 @@
-
-// Лабораторная работа 3. Указатели. Передача параметров в функцию по указателю. Сортировка одномерного массива. Структуры
+п»ї
+// Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° 3. РЈРєР°Р·Р°С‚РµР»Рё. РџРµСЂРµРґР°С‡Р° РїР°СЂР°РјРµС‚СЂРѕРІ РІ С„СѓРЅРєС†РёСЋ РїРѕ СѓРєР°Р·Р°С‚РµР»СЋ. РЎРѕСЂС‚РёСЂРѕРІРєР° РѕРґРЅРѕРјРµСЂРЅРѕРіРѕ РјР°СЃСЃРёРІР°. РЎС‚СЂСѓРєС‚СѓСЂС‹
 
 #include <iostream>
 
@@ -7,27 +7,27 @@ using namespace std;
 
 class Lab3 {
 public:
-	//Задача 1.
+	//Р—Р°РґР°С‡Р° 1.
 	void value(int* a, int* b) {
-		cout << " Введите значения a и b..." << endl;
-		cout << " Значение a равно: ";
+		cout << " Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ a Рё b..." << endl;
+		cout << " Р—РЅР°С‡РµРЅРёРµ a СЂР°РІРЅРѕ: ";
 		cin >> *a;
-		cout << " Значение b равно: ";
+		cout << " Р—РЅР°С‡РµРЅРёРµ b СЂР°РІРЅРѕ: ";
 		cin >> *b;
 	}
 
 	int raschet(int* a, int* b, int* zn1, int* zn2) {
 		*zn1 = pow(*a, *b);
 		*zn2 = pow(*b, *a);
-		cout << " Тогда..." << endl;
-		cout << " Значение a^b равно: " << *zn1 << endl;
-		cout << " Значение b^a равно: " << *zn2;
+		cout << " РўРѕРіРґР°..." << endl;
+		cout << " Р—РЅР°С‡РµРЅРёРµ a^b СЂР°РІРЅРѕ: " << *zn1 << endl;
+		cout << " Р—РЅР°С‡РµРЅРёРµ b^a СЂР°РІРЅРѕ: " << *zn2;
 		return *zn1, *zn2;
 	}
 
 	void Task1() {
 		setlocale(LC_ALL, "RUS");
-		cout << "			Задача 1." << endl << endl;
+		cout << "			Р—Р°РґР°С‡Р° 1." << endl << endl;
 		int a, b;
 		int zn1, zn2;
 		value(&a, &b);
@@ -35,19 +35,19 @@ public:
 		cout << endl << endl;
 	}
 
-	//Задача 2.
+	//Р—Р°РґР°С‡Р° 2.
 	void Input(int arr[], int size) {
-		cout << "Введите " << size << " элементов... ";
+		cout << "Р’РІРµРґРёС‚Рµ " << size << " СЌР»РµРјРµРЅС‚РѕРІ... ";
 		cout << endl << endl;
 		for (int i = 0; i < size; i++) {
-			cout << "Элемент[" << i + 1 << "]= ";
+			cout << "Р­Р»РµРјРµРЅС‚[" << i + 1 << "]= ";
 			cin >> arr[i];
 		}
 	}
 
 	void Show(int arr[], int size) {
 		cout << endl;
-		cout << "Исходный массив: ";
+		cout << "РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ: ";
 		for (int i = 0; i < size; i++)
 			cout << arr[i] << "  ";
 	}
@@ -57,13 +57,13 @@ public:
 			if (arr[i] > 0) arr[i] = arr[i] * arr[i];
 		}
 		cout << endl;
-		cout << "Преобразованный массив: ";
+		cout << "РџСЂРµРѕР±СЂР°Р·РѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ: ";
 		for (int i = 0; i < size; i++) cout << arr[i] << "  ";
 	}
 
 	void Task2() {
 		setlocale(LC_ALL, "RUS");
-		cout << "			Задача 2." << endl << endl;
+		cout << "			Р—Р°РґР°С‡Р° 2." << endl << endl;
 		const int SIZE = 10;
 		int A[SIZE];
 		Input(A, SIZE);
@@ -72,7 +72,7 @@ public:
 		cout << endl << endl;
 	}
 
-	//Задача 3.
+	//Р—Р°РґР°С‡Р° 3.
 	int** Create(int n, int m) {
 		int** M = new int* [n];
 		int** N = new int* [n];
@@ -84,7 +84,7 @@ public:
 	}
 
 	void Input(int** M, int** N, int n, int m) {
-		cout << "Первая матрица:" << endl;
+		cout << "РџРµСЂРІР°СЏ РјР°С‚СЂРёС†Р°:" << endl;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
 				M[i][j] = rand() % 100;
@@ -92,7 +92,7 @@ public:
 			}
 		}
 		cout << endl << endl;
-		cout << "Вторая матрица:" << endl;
+		cout << "Р’С‚РѕСЂР°СЏ РјР°С‚СЂРёС†Р°:" << endl;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
 				N[i][j] = rand() % 100;
@@ -100,12 +100,12 @@ public:
 			}
 		}
 		cout << endl << endl;
-		cout << "Складываем матрицы..." << endl;
+		cout << "РЎРєР»Р°РґС‹РІР°РµРј РјР°С‚СЂРёС†С‹..." << endl;
 		cout << endl;
 	}
 
 	void Process(int** M, int** N, int** Res, int n, int m) {
-		cout << "Матрица, полученная после сложения двух предыдущих: " << endl;
+		cout << "РњР°С‚СЂРёС†Р°, РїРѕР»СѓС‡РµРЅРЅР°СЏ РїРѕСЃР»Рµ СЃР»РѕР¶РµРЅРёСЏ РґРІСѓС… РїСЂРµРґС‹РґСѓС‰РёС…: " << endl;
 		for (int i = 0; i < n; ++i) {
 			for (int j = 0; j < m; ++j) {
 				Res[i][j] = M[i][j] + N[i][j];
@@ -116,13 +116,13 @@ public:
 
 	void Task3() {
 		setlocale(LC_ALL, "RUS");
-		cout << "			Задача 3." << endl << endl;
+		cout << "			Р—Р°РґР°С‡Р° 3." << endl << endl;
 		srand(time(NULL));
-		cout << "Введите размерности матриц..." << endl << endl;
+		cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂРЅРѕСЃС‚Рё РјР°С‚СЂРёС†..." << endl << endl;
 		int n, m;
-		cout << "Количество строк матрицы: ";
+		cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹: ";
 		cin >> n;
-		cout << "Количество столбцов матрицы: ";
+		cout << "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹: ";
 		cin >> m;
 		cout << endl;
 

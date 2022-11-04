@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include "Lab1.cpp"
 #include "Lab2.cpp"
 #include "Lab3.cpp"
@@ -13,9 +13,9 @@ int main() {
 	setlocale(LC_ALL, "RUS");
 
 	int lab_number, task_number;
-	cout << " Ââåäèòå íîìåð ëàáîðàòîðíîé ðàáîòû: ";
+	cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð»Ð°Ð±Ð¾Ñ€Ð°Ñ‚Ð¾Ñ€Ð½Ð¾Ð¹ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹: ";
 	cin >> lab_number;
-	cout << " Ââåäèòå íîìåð çàäà÷è: ";
+	cout << " Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð·Ð°Ð´Ð°Ñ‡Ð¸: ";
 	cin >> task_number;
 	cout << endl;
 
@@ -38,7 +38,7 @@ int main() {
 			obj1.Task3();
 		}
 		else {
-			cout << " Òàêîé çàäà÷è íåò!" << endl << endl;
+			cout << " Ð¢Ð°ÐºÐ¾Ð¹ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Ð½ÐµÑ‚!" << endl << endl;
 		}
 	}
 	else if (lab_number == 2) {
@@ -52,7 +52,7 @@ int main() {
 			obj2.Task3();
 		}
 		else {
-			cout << " Òàêîé çàäà÷è íåò!" << endl << endl;
+			cout << " Ð¢Ð°ÐºÐ¾Ð¹ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Ð½ÐµÑ‚!" << endl << endl;
 		}
 	}
 	else if (lab_number == 3) {
@@ -66,7 +66,7 @@ int main() {
 			obj3.Task3();
 		}
 		else {
-			cout << " Òàêîé çàäà÷è íåò!" << endl << endl;
+			cout << " Ð¢Ð°ÐºÐ¾Ð¹ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Ð½ÐµÑ‚!" << endl << endl;
 		}
 	}
 	else if (lab_number == 4) {
@@ -80,7 +80,7 @@ int main() {
 			obj4.Task3();
 		}
 		else {
-			cout << " Òàêîé çàäà÷è íåò!" << endl << endl;
+			cout << " Ð¢Ð°ÐºÐ¾Ð¹ Ð·Ð°Ð´Ð°Ñ‡Ð¸ Ð½ÐµÑ‚!" << endl << endl;
 		}
 	}
 	else if (lab_number == 5) {
@@ -99,7 +99,7 @@ int main() {
 		}
 	}
 	else {
-		cout << " Òàêîé ëàáîðàòîðíîé ðàáîòû íåò!" << endl << endl;
+		cout << " Ð¢Ð°ÐºÐ¾Ð¹ Ð»Ð°Ð±Ð¾Ñ€Ð°Ñ‚Ð¾Ñ€Ð½Ð¾Ð¹ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð½ÐµÑ‚!" << endl << endl;
 	}	
 
 	system("PAUSE");
